@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+</head>
+<body>
+    <h1>Students List</h1>
+    <table border="1">
+    {% for x in students %}
+            <tr>
+                <td>{{ x.id }}</td>
+                <td>{{ x.firstname }}</td>
+                <td>{{ x.lastname }}</td>
+                <td>{{ x.dob }}</td>
+                <td>{{ x.roll_number }}</td>
+                <td>{{ x.department_name }}</td>
+                <td>{{ x.course_name }}</td>
+                <td>{{ x.semester_number }}</td>
+            </tr>
+    {% endfor %}
+    </table>
+
+
+</body>
+</html>
